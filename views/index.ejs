@@ -1,1 +1,8 @@
-Middle
+<h2>Recently Added</h2>
+
+<% for (let book of books) { %> <%= book.title %>
+<a href="/books/<%= book.id %>">
+  <br />
+  <img height="150px" width="100px" src="<%= book.coverImagePath %>"
+/></a>
+<% } %>
